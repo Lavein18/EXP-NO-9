@@ -1,3 +1,5 @@
+Creating Jdbc Connection And Displaying Students
+
 <html> 
 <head> 
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"> 
@@ -70,3 +72,27 @@ e.printStackTrace();
 %>
 </form>
 </html>
+
+Average age
+
+int total = 18+21+24;
+    int avg = (total)/3;
+    int percent = avg;
+    String Age="";
+
+Department with Highest Number of Students 
+<%
+        int dept1= Integer.parseInt(request.getParameter("t1"));
+        int dept2= Integer.parseInt(request.getParameter("t2"));
+        int dept3= Integer.parseInt(request.getParameter("t3"));
+    %>
+    <h1>Biggest Number is:</h1>
+    <%
+        if ((dept1>dept2) && (dept1>dept3))
+            out.println(dept1);
+        else if (dept2>dept3)
+            out.println(dept2);
+        else
+            out.println(dept3);
+    %>
+
