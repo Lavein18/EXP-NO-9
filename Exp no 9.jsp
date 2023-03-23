@@ -73,6 +73,7 @@ e.printStackTrace();
 </form>
 </html>
 
+
 Average age
 
 int total = 18+21+24;
@@ -81,12 +82,13 @@ int total = 18+21+24;
     String Age="";
 
 Department with Highest Number of Students 
+
 <%
         int dept1= Integer.parseInt(request.getParameter("t1"));
         int dept2= Integer.parseInt(request.getParameter("t2"));
         int dept3= Integer.parseInt(request.getParameter("t3"));
     %>
-    <h1>Department with Highest Number of Students is:</h1>
+    <h1>Department with the Highest Number of Students is:</h1>
     <%
         if ((dept1>dept2) && (dept1>dept3))
             out.println(dept1);
@@ -95,4 +97,5 @@ Department with Highest Number of Students
         else
             out.println(dept3);
     %>
+
 
