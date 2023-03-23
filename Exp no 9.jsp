@@ -86,7 +86,7 @@ Department with Highest Number of Students
         int dept2= Integer.parseInt(request.getParameter("t2"));
         int dept3= Integer.parseInt(request.getParameter("t3"));
     %>
-    <h1>Biggest Number is:</h1>
+    <h1>Department with Highest Number of Students is:</h1>
     <%
         if ((dept1>dept2) && (dept1>dept3))
             out.println(dept1);
